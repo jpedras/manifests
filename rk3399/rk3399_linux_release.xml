@@ -35,7 +35,7 @@
   <project name="mpv" path="external/mpv" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="master"/>
   <project name="music" path="app/music" revision="40a4da13e82f32d83369f7777479a196d9f58576" upstream="master"/>
   <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
-  <project name="recovery" path="external/recovery" revision="60dc269d70f35fa30a61130f7bf8ea49e3b7dbd2" upstream="develop"/>
+  <project name="recovery" path="external/recovery" revision="d72436a2e23c630607a845b0aa06bfdf6d6b983f" upstream="develop"/>
   <project name="rk-rootfs-build" path="rootfs" revision="92cd2724c1e2bc8497ad9efe65b3b05b1de4483a" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="33958d8829bbd434011013dad0d334a0e69ba61a" upstream="master"/>
   <project name="rkbin" revision="f36c853dde883d2a3985039f1f5c2b855e426d79" upstream="29mirror"/>
