@@ -42,6 +42,7 @@
   <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="4e4c31e8964e0c56a57dfc99081fd6929c49437e" upstream="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="49e3502eba94714b2a18f93deb6c66ddba73bd74" upstream="master"/>
   <project name="settings" path="app/settings" revision="ec4f67a2df498893539eb2435d14348d97ecc462" upstream="master"/>
   <project name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/>
   <project name="tools" revision="898158c75f25225b0ad30e59d5a4fe920dc30448" upstream="master">
