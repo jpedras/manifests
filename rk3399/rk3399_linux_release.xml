@@ -38,7 +38,7 @@
   <project name="recovery" path="external/recovery" revision="d72436a2e23c630607a845b0aa06bfdf6d6b983f" upstream="develop"/>
   <project name="rk-rootfs-build" path="rootfs" revision="92cd2724c1e2bc8497ad9efe65b3b05b1de4483a" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="33958d8829bbd434011013dad0d334a0e69ba61a" upstream="master"/>
-  <project name="rkbin" revision="f36c853dde883d2a3985039f1f5c2b855e426d79" upstream="29mirror"/>
+  <project name="rkbin" revision="c69eb331ccba1cc8679c7469f9d32bc0c14aafff" upstream="29mirror"/>
   <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="4e4c31e8964e0c56a57dfc99081fd6929c49437e" upstream="master"/>
@@ -50,6 +50,6 @@
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
   </project>
-  <project name="u-boot" revision="73d3fd4b3290f488b682aace00759d029dce0f55" upstream="stable"/>
+  <project name="u-boot" revision="f9cccafce5cb92e776ba42d70c6611ba3f46a74b" upstream="stable-4.4-rk3399-linux"/>
   <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="master"/>
 </manifest>
