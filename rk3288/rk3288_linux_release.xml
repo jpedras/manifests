@@ -27,7 +27,7 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
-  <project name="kernel" revision="6abe8041333b334957522f7704c0093690a76cb3" upstream="stable-4.4-rk3288-linux"/>
+  <project name="kernel" revision="c0760927f6cb01f7a762564a3ddb8acaf177a0b9" upstream="stable-4.4-rk3288-linux"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
   <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="646e78b4ac9333b418abb0101b297b9275f567cb" upstream="master"/>
@@ -38,7 +38,7 @@
   <project name="recovery" path="external/recovery" revision="d72436a2e23c630607a845b0aa06bfdf6d6b983f" upstream="develop"/>
   <project name="rk-rootfs-build" path="rootfs" revision="92cd2724c1e2bc8497ad9efe65b3b05b1de4483a" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="33958d8829bbd434011013dad0d334a0e69ba61a" upstream="master"/>
-  <project name="rkbin" revision="f36c853dde883d2a3985039f1f5c2b855e426d79" upstream="29mirror"/>
+  <project name="rkbin" revision="c69eb331ccba1cc8679c7469f9d32bc0c14aafff" upstream="29mirror"/>
   <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
   <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="master"/>
   <project name="rkwifibt" path="external/rkwifibt" revision="4e4c31e8964e0c56a57dfc99081fd6929c49437e" upstream="master"/>
@@ -50,6 +50,6 @@
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
   </project>
-  <project name="u-boot" revision="d80ac02301a3f85fee7d153e3a67f173e014cf71" upstream="stable"/>
+  <project name="u-boot" revision="3947e40b815a39804243ebc236b1064a8482ec98" upstream="stable-4.4-rk3288-linux"/>
   <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="master"/>
 </manifest>
