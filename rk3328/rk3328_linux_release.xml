@@ -4,34 +4,52 @@
   
   <default remote="firefly-linux" revision="master" sync-j="4"/>
   
-  <project name="QLauncher" path="app/QLauncher" revision="a553ab5b52e3c85fca65f35f4c8450faa57b045b" upstream="master"/>
+  <project name="QLauncher" path="app/QLauncher" revision="0dd9497ec64309b4512f07e01c92723c60927d88" upstream="master"/>
+  <project name="alsa-config" path="external/alsa-config" revision="c8969001663e9dff07f25da81216ad3f855c7eca" upstream="master"/>
   <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="master"/>
-  <project name="buildroot" revision="4b727d8c0be192f4a87d551338939bd0bbc4bdac" upstream="2016.08.x"/>
-  <project name="camera" path="app/camera" revision="e7c3343b25f451c7d8585152eae2970deeccfdbb" upstream="master"/>
-  <project name="carmachine" path="app/carmachine" revision="ad43b7aff40d21729657ea38897340c202fcce81" upstream="master"/>
-  <project name="device-custom" path="device/rockchip/rk3399" revision="3694e94570a28a66bfe46ed1f3c7e09fe74b6e5e" upstream="rk3399">
-    <copyfile dest="mkfirmware.sh" src="mkfirmware.sh"/>
-    <copyfile dest="build_all.sh" src="build_all.sh"/>
-    <copyfile dest="envsetup.sh" src="envsetup.sh"/>
+  <project name="buildroot" revision="595890d12d07e0f17f41aa433eb796cb56aea293" upstream="master">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project name="docs" revision="8aa2f94b73844ff8487164e162d592e1ccd54433" upstream="rk3399"/>
-  <project name="gallery" path="app/gallery" revision="76f55041d097fcabc018fc84a6ff8886e21f3ab1" upstream="master"/>
+  <project name="camera" path="app/camera" revision="2ab7d32415ff076ea6b3807b4fc108b13d7314cd" upstream="master"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="ae1a9dffc54c798b62e29f5948d9f4b33170dd38" upstream="master"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="a9cb2ce10b51e107aefb1d72277ca71171a0c5cc" upstream="master"/>
+  <project name="device-custom" path="device/rockchip" revision="320daa81e7b7391a3681d34d0d218d7a73ee0589" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+ </project>
+  <project name="distro" revision="5bdb50e629e3fee3954635eb678399424a77ad78" upstream="master"/>
+  <project name="dl" path="buildroot/dl" revision="9706155226abf00e9cba5bf600fdd98c5daf9eef" upstream="master"/>
+  <project name="docs" revision="a1e8facc74dc84e899709a825c97d7ad04da6fa2" upstream="master"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="589de66a0b50c43b93f511361275d9ff86da21dd" upstream="master"/>
+  <project name="gallery" path="app/gallery" revision="127e3538535650180eddb273da92695e3dacd423" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project name="gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="4b341df712969ca2ac0c3cf6294260d406b9d9be" upstream="aarch64-linux-android-4.9"/>
-  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="81ea87fd6edecd88cd28d21885a757e2f440aabe" upstream="rkvideo"/>
-  <project name="io" path="external/io" revision="56e9d7661f2e7ae9818e6fc22f38a222867f2076" upstream="master"/>
-  <project name="kernel" revision="2b3fe0f3500bd62ea6ba3a2da177edda27a8d6ea" upstream="stable"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
+  <project name="kernel" revision="2ad015924ddfa794886055ad3e8b48b1a9260c2d" upstream="stable-4.4-rk3399-linux-20190402"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
-  <project name="libmali" path="external/libmali" revision="41a3e9ae1369e2e497e5c11c4c31c8fe7f4afafc" upstream="29mirror"/>
-  <project name="linux-adb" path="external/linux-adb" revision="4704805987b12f6b69ecc3c648106bcf74d6d914" upstream="master"/>
-  <project name="mpp" path="external/mpp" revision="77b58369658b739e5c99b6a6876809e073086dcf" upstream="release"/>
-  <project name="music" path="app/music" revision="2b40e799f2d45ae900c3279c9cd90c8d93689393" upstream="master"/>
-  <project name="powermanager" path="external/powermanager" revision="5f449bc1cdbf4760ef5540ae58d78572828e4916" upstream="master"/>
-  <project name="rk-rootfs-build" path="rootfs" revision="274d45c14a4cb4fc97996f1c1e849ed12060a5db" upstream="master"/>
-  <project name="rkbin" revision="4009b1dfea46b3d804eb581c900e63a06533ddcc" upstream="29mirror"/>
-  <project name="settings" path="app/settings" revision="e6bf157031a71b565da07f27bdc7e313b3d13acd" upstream="master"/>
-  <project name="tools" revision="059959f378d1e9d8c1c19d3a1128db7bc6d74dd7" upstream="rk3399"/>
-  <project name="u-boot" revision="4bafc2da2ded5e0dcfd8c097a501e301c8eeea9f" upstream="stable"/>
-  <project name="video" path="app/video" revision="b60a6d64e90296fd8d1d886fa96afa454fb1773c" upstream="master"/>
-  <project name="xserver" path="external/xserver" revision="6f770de04d50422af48f83e17de7197ed0a76fdb" upstream="rockchip-1.18"/>
+  <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
+  <project name="linux-rga" path="external/linux-rga" revision="646e78b4ac9333b418abb0101b297b9275f567cb" upstream="master"/>
+  <project name="mpp" path="external/mpp" revision="1babbc9cc277692d02fc4727daef2e91f91ce8b0" upstream="release"/>
+  <project name="mpv" path="external/mpv" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="master"/>
+  <project name="music" path="app/music" revision="5899bbeb6f6d4b40ede66d943e06ac52a16a0326" upstream="master"/>
+  <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
+  <project name="recovery" path="external/recovery" revision="d72436a2e23c630607a845b0aa06bfdf6d6b983f" upstream="develop"/>
+  <project name="rk-rootfs-build" path="rootfs" revision="92cd2724c1e2bc8497ad9efe65b3b05b1de4483a" upstream="master"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="33958d8829bbd434011013dad0d334a0e69ba61a" upstream="master"/>
+  <project name="rkbin" revision="aa8e00fb7d4f6d714748ffa5e00d6d59fa197707" upstream="29mirror"/>
+  <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="master"/>
+  <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="master"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="4e4c31e8964e0c56a57dfc99081fd6929c49437e" upstream="master"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="49e3502eba94714b2a18f93deb6c66ddba73bd74" upstream="master"/>
+  <project name="settings" path="app/settings" revision="0c2fb614a23f7c0e60ee578f619405b732d9ffa0" upstream="master"/>
+  <project name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="master"/>
+  <project name="tools" revision="bec4824df9f2583818ec787fc92644cf7a0e17c7" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3328-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3328-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3328-mkupdate.bat"/>
+  </project>
+  <project name="u-boot" revision="0b1f58532334dce3217f18a75264f61ea733b989" upstream="stable-4.4-rk3399-linux-20190402"/>
+  <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="master"/>
 </manifest>
