@@ -1,67 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="." name="firefly-linux" review="https://github.com/FireflyTeam"/>
+  
   <default remote="firefly-linux" revision="master" sync-j="4"/>
-
-<project name="libdrm-rockchip" path="external/libdrm" revision="rk3399pro/firefly"/>
-<project name="rk_tee_user" path="external/security/rk_tee_user" revision="rk3399pro/firefly"/>
-<project name="u-boot" path="u-boot" revision="stable-4.4-rk3399pro-linux-develop"/>
-<project name="QLauncher" path="app/QLauncher" revision="rk3399pro/firefly"/>
-<project name="camera" path="app/camera" revision="rk3399pro/firefly"/>
-<project name="demo" path="app/demo" revision="rk3399pro/firefly"/>
-<project name="gallery" path="app/gallery" revision="rk3399pro/firefly"/>
-<project name="music" path="app/music" revision="rk3399pro/firefly"/>
-<project name="settings" path="app/settings" revision="rk3399pro/firefly"/>
-<project name="video" path="app/video" revision="rk3399pro/firefly"/>
-<project name="dl" path="buildroot/dl" revision="rk3399pro/firefly"/>
-<project name="device-custom" path="device/rockchip" revision="master">
-<linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
-<linkfile dest="build.sh" src="common/build.sh"/>
-<linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
-<linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
-</project>
-<project name="distro" path="distro" revision="rk3399pro/firefly"/>
-<project name="docs" path="docs" revision="rk3399pro/firefly"/>
-<project name="alsa-config" path="external/alsa-config" revision="rk3399pro/firefly"/>
-<project name="audioservice" path="external/audioservice" revision="rk3399pro/firefly"/>
-<project name="bluez-alsa" path="external/bluez-alsa" revision="rk3399pro/firefly"/>
-<project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="rk3399pro/firefly"/>
-<project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="rk3399pro/firefly"/>
-<project name="ffmpeg" path="external/ffmpeg" revision="rk3399pro/firefly"/>
-<project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="rk3399pro/firefly"/>
-<project name="gstreamer-camera" path="external/gstreamer-camera" revision="rk3399pro/firefly"/>
-<project name="minigui" path="external/minigui" revision="rk3399pro/firefly"/>
-<project name="mpv" path="external/mpv" revision="rk3399pro/firefly"/>
-<project name="powermanager" path="external/powermanager" revision="rk3399pro/firefly"/>
-<project name="rk_pcba_test" path="external/rk_pcba_test" revision="rk3399pro/firefly"/>
-<project name="rknn_demo" path="external/rknn_demo" revision="rk3399pro/firefly"/>
-<project name="rknpu" path="external/rknpu" revision="rk3399pro/firefly"/>
-<project name="rkscript" path="external/rkscript" revision="rk3399pro/firefly"/>
-<project name="rkssd" path="external/rkssd" revision="rk3399pro/firefly"/>
-<project name="rkupdate" path="external/rkupdate" revision="rk3399pro/firefly"/>
-<project name="rkwifibt" path="external/rkwifibt" revision="rk3399pro/firefly"/>
-<project name="softapDemo" path="external/softapDemo" revision="rk3399pro/firefly"/>
-<project name="softapServer" path="external/softapServer" revision="rk3399pro/firefly"/>
-<project name="tensorflow" path="external/tensorflow" revision="rk3399pro/firefly"/>
-<project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="rk3399pro/firefly"/>
-<project name="libmali" path="external/libmali" revision="rk3399pro/firefly"/>
-<project name="linux-rga" path="external/linux-rga" revision="rk3399pro/firefly"/>
-<project name="recovery" path="external/recovery" revision="firefly"/>
-<project name="rk-rootfs-build" path="debian" revision="rk3399pro/firefly"/>
-<project name="bin" path="external/security/bin" revision="rk3399pro/firefly"/>
-<project name="tools" path="tools" revision="rk3399pro/firefly">
-<linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
-<linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
-<linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
-<linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
-<linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
-</project>
-<project name="kernel" path="kernel" revision="stable-4.4-rk3399pro-linux-develop"/>
-<project name="mpp" path="external/mpp" revision="rk3399pro/firefly"/>
-<project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="rk3399pro/firefly"/>
-<project name="buildroot" path="buildroot" revision="rk3399pro/firefly">
-<linkfile dest="Makefile" src="build/Makefile"/>
-<linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
-</project>
-<project name="rkbin" path="rkbin" revision="rk3399pro/firefly"/>
+  
+  <project name="QLauncher" path="app/QLauncher" revision="0a0bb3aa1ce08b1c4b5a36e4b930223f2f80e9dd" upstream="rk3399pro/firefly"/>
+  <project name="alsa-config" path="external/alsa-config" revision="5a80dbcff93b5db40310910835649277f60048c4" upstream="rk3399pro/firefly"/>
+  <project name="audioservice" path="external/audioservice" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="rk3399pro/firefly"/>
+  <project name="bin" path="external/security/bin" revision="63458426583c44369ba4eee8dd3721a8d9d62aff" upstream="rk3399pro/firefly"/>
+  <project name="bluez-alsa" path="external/bluez-alsa" revision="38c52f0860e45aef83fdf746347b464093873762" upstream="rk3399pro/firefly"/>
+  <project name="buildroot" revision="bf8b56f298987d74840d7e7b28c1c0d6dc0a4d6c" upstream="rk3399pro/firefly">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="camera" path="app/camera" revision="b037fffb85ce59fefad19846f9d2df9258742fc2" upstream="rk3399pro/firefly"/>
+  <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="dff8b97d58507c9fd74082880ae4ab068ba6b88d" upstream="rk3399pro/firefly"/>
+  <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="041edb59255a643315ca5d229dee2724678984b6" upstream="rk3399pro/firefly"/>
+  <project name="demo" path="app/demo" revision="7b0adedacfe6c5d4100a24ca2eb4a7972b72fa94" upstream="rk3399pro/firefly"/>
+  <project name="device-custom" path="device/rockchip" revision="0e898a5ded7b90c50a1a733551cf90c43e1c533f" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
+  </project>
+  <project name="distro" revision="4e91919b93420f2cfb855ccba925e4ca1e6e3fc9" upstream="rk3399pro/firefly"/>
+  <project name="dl" path="buildroot/dl" revision="27acabf63f8f1140e67ae7de95f304ab732714a8" upstream="rk3399pro/firefly"/>
+  <project name="docs" revision="0113cf2026ef8b8a8bae9ea8eefe6b7736458302" upstream="rk3399pro/firefly"/>
+  <project name="ffmpeg" path="external/ffmpeg" revision="589de66a0b50c43b93f511361275d9ff86da21dd" upstream="rk3399pro/firefly"/>
+  <project name="gallery" path="app/gallery" revision="5eee813bdf54c908e56a4f2fdf757d657ebbd593" upstream="rk3399pro/firefly"/>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399pro/firefly"/>
+  <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="1e0c3194e6ceec38196ad9d6cbc4c5093bc308f5" upstream="rk3399pro/firefly"/>
+  <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="rk3399pro/firefly"/>
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="c766879e0b750233b197a2dd495e562d64498244" upstream="rk3399pro/firefly"/>
+  <project name="kernel" revision="d61f23b5e61344c44bcf4276e69ef39a75019897" upstream="stable-4.4-rk3399pro-linux-develop"/>
+  <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk3399pro/firefly"/>
+  <project name="libmali" path="external/libmali" revision="915d6a13561e640fd9ff0984209632f027365a0d" upstream="rk3399pro/firefly"/>
+  <project name="linux-rga" path="external/linux-rga" revision="d4155b84a6a285c3f25f32143eae66530dccf351" upstream="rk3399pro/firefly"/>
+  <project name="minigui" path="external/minigui" revision="935476e2917c31cb861baf14e98ada313be64e14" upstream="rk3399pro/firefly"/>
+  <project name="mpp" path="external/mpp" revision="869ff4498055b5f66e260f25cc3422acb618e1ec" upstream="rk3399pro/firefly"/>
+  <project name="mpv" path="external/mpv" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="rk3399pro/firefly"/>
+  <project name="music" path="app/music" revision="5899bbeb6f6d4b40ede66d943e06ac52a16a0326" upstream="rk3399pro/firefly"/>
+  <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="rk3399pro/firefly"/>
+  <project name="recovery" path="external/recovery" revision="d5e6f4281c06983377d8079c4401b69117fddbb1" upstream="firefly"/>
+  <project name="rk-rootfs-build" path="debian" revision="1816508f1773730f20a07b17e0bb382e5060e22d" upstream="rk3399pro/firefly"/>
+  <project name="rk_pcba_test" path="external/rk_pcba_test" revision="25643cf5f522a71ed2a918b0abe15e363a893504" upstream="rk3399pro/firefly"/>
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="e1aa9109bdfa53ee0e331eea07ee8ad360d97706" upstream="rk3399pro/firefly"/>
+  <project name="rkbin" revision="ae3bed2cd21415a5ab44ca7007b4ca5ba0f2126e" upstream="rk3399pro/firefly"/>
+  <project name="rknn_demo" path="external/rknn_demo" revision="c4b22acc31bb2d345c299800594b7974a26435c3" upstream="rk3399pro/firefly"/>
+  <project name="rknpu" path="external/rknpu" revision="190de36a8ed76eecd623f8929f84f1d09a440b9a" upstream="rk3399pro/firefly"/>
+  <project name="rkscript" path="external/rkscript" revision="04f5b713e2ebe47d9d852aea70e371e9c8f8b2eb" upstream="rk3399pro/firefly"/>
+  <project name="rkssd" path="external/rkssd" revision="1c50d336e770a8ce09ae33b3e09d2783d5b4c2d9" upstream="rk3399pro/firefly"/>
+  <project name="rkupdate" path="external/rkupdate" revision="000bc14833c2fa12ba45e9f87e0775977485b4f1" upstream="rk3399pro/firefly"/>
+  <project name="rkwifibt" path="external/rkwifibt" revision="7ffe1901cd5052ac6f26b7184b0d23a0c616ba5e" upstream="rk3399pro/firefly"/>
+  <project name="settings" path="app/settings" revision="8a834d76b5b058ca239c4022fe387264c6ef4c5b" upstream="rk3399pro/firefly"/>
+  <project name="softapDemo" path="external/softapDemo" revision="414866b393aa9baa6eca0af67d98eaff988776e5" upstream="rk3399pro/firefly"/>
+  <project name="softapServer" path="external/softapServer" revision="9158517316a050190273c6809ea88467a4276e16" upstream="rk3399pro/firefly"/>
+  <project name="tensorflow" path="external/tensorflow" revision="e1877bb157a775d76ec8c0b68467aef6d053bbb2" upstream="rk3399pro/firefly"/>
+  <project name="tools" revision="c02addac027ff285cd2d1f7b8418f4018ee71047" upstream="rk3399pro/firefly">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project name="u-boot" revision="14ce716885c49ea79f38a67b4cd9aca303c6b82c" upstream="stable-4.4-rk3399pro-linux-develop"/>
+  <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="rk3399pro/firefly"/>
 </manifest>
