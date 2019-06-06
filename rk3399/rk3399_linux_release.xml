@@ -50,6 +50,6 @@
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
   </project>
-  <project name="u-boot" revision="0b1f58532334dce3217f18a75264f61ea733b989" upstream="stable-4.4-rk3399-linux-20190402"/>
+  <project name="u-boot" revision="d3e9cd07f7a8a5439136d26eb62d6616f88b3674" upstream="stable-4.4-rk3399-linux-20190402"/>
   <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="master"/>
 </manifest>
