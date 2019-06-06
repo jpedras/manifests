@@ -27,7 +27,7 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="master"/>
-  <project name="kernel" revision="3ac22a00a667de813cb36697ca704ef654159a4b" upstream="stable-4.4-rk3399-linux-20190402"/>
+  <project name="kernel" revision="55359a0f2f3880d7ea33292715e81ae82f96c6d8" upstream="stable-4.4-rk3399-linux-20190402"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="rockchip-2.4.68"/>
   <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="646e78b4ac9333b418abb0101b297b9275f567cb" upstream="master"/>
