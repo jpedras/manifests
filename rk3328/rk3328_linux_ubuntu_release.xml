@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="." name="firefly-linux" review="https://github.com/FireflyTeam"/>
+  
+  <default remote="firefly-linux" revision="master" sync-j="4"/>
+  
+  <project name="device-custom" path="device/rockchip" revision="320daa81e7b7391a3681d34d0d218d7a73ee0589" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+ </project>
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
+  <project name="kernel" revision="55359a0f2f3880d7ea33292715e81ae82f96c6d8" upstream="stable-4.4-rk3399-linux-20190402"/>
+  <project name="rkbin" revision="aa8e00fb7d4f6d714748ffa5e00d6d59fa197707" upstream="29mirror"/>
+  <project name="tools" revision="bec4824df9f2583818ec787fc92644cf7a0e17c7" upstream="master">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3328-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3328-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3328-mkupdate.bat"/>
+  </project>
+  <project name="u-boot" revision="0b1f58532334dce3217f18a75264f61ea733b989" upstream="stable-4.4-rk3399-linux-20190402"/>
+</manifest>
