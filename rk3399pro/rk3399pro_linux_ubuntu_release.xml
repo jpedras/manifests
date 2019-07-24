@@ -11,7 +11,7 @@
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
   </project>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399pro/firefly"/>
-  <project name="kernel" revision="3d4be9ec2c2896cc7f30bef1af4acb4886b108ec" upstream="stable-4.4-rk3399pro-linux-develop"/>
+  <project name="kernel" revision="c45985f1271e06a9099d1f8444607f4e25d125f8" upstream="stable-4.4-rk3399pro-linux-develop"/>
   <project name="rkbin" revision="ae3bed2cd21415a5ab44ca7007b4ca5ba0f2126e" upstream="rk3399pro/firefly"/>
   <project name="tools" revision="c02addac027ff285cd2d1f7b8418f4018ee71047" upstream="rk3399pro/firefly">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
