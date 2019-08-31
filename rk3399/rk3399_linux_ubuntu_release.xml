@@ -4,7 +4,7 @@
   
   <default remote="firefly-linux" revision="master" sync-j="4"/>
   
-  <project name="device-custom" path="device/rockchip" revision="5dcd9dcd000ebe42f34d53de559cd62806c157c7" upstream="master">
+  <project name="device-custom" path="device/rockchip" revision="c35cf1b62934c710afcd1fd0e86536a3e6f2905a" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>

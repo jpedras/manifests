@@ -15,7 +15,7 @@
   <project name="demo" path="app/demo" revision="9c70bb34443f8a8c7b5987baf4b47dbb29d0a0c2" upstream="master"/>
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="1ca397689e2803445326dcddea49fa6b0757a416" upstream="master"/>
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="fe8e1563c787d607b6bf4dea0d5f32a8662d9445" upstream="master"/>
-  <project name="device-custom" path="device/rockchip" revision="49e8eee23f1895c2cf33109a1f416cc09792d96f" upstream="master">
+  <project name="device-custom" path="device/rockchip" revision="c35cf1b62934c710afcd1fd0e86536a3e6f2905a" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -29,7 +29,7 @@
   <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="0b606f9c64e18634c349717c60f50b6921e4e774" upstream="master"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="c927a1d1d7cf4e6a0becbbc1a2b7b593b0c07396" upstream="master"/>
-  <project name="kernel" revision="c72254bdd57f7cab7ebb0f5bc4a2827f518bdf54" upstream="stable-4.4-rk3399-linux"/>
+  <project name="kernel" revision="164b4f3e07b2fc93274e912f371e032599db000e" upstream="stable-4.4-rk3399-linux"/>
   <project name="libdrm-rockchip" path="external/libdrm-rockchip" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="firefly"/>
   <project name="libmali" path="external/libmali" revision="721653b5b3b525a4f80d15aa7e2f9df7b7e60427" upstream="29mirror"/>
   <project name="linux-rga" path="external/linux-rga" revision="d4155b84a6a285c3f25f32143eae66530dccf351" upstream="master"/>
