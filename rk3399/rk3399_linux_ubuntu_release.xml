@@ -10,12 +10,12 @@
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
  </project>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
-  <project name="kernel" revision="17982fadb9b566ced754a05beb41dce220f58520" upstream="stable-4.4-rk3399-linux"/>
-  <project name="rkbin" revision="aa8e00fb7d4f6d714748ffa5e00d6d59fa197707" upstream="29mirror"/>
+  <project name="kernel" revision="a179e620b38958254c1f74d283a9cf853ae20813" upstream="stable-4.4-rk3399-linux-20190910"/>
+  <project name="rkbin" revision="41ccbc9442968ed0862fa171bff9621a8558fc37" upstream="29mirror"/>
   <project name="tools" revision="898158c75f25225b0ad30e59d5a4fe920dc30448" upstream="master">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
   </project>
-  <project name="u-boot" revision="d3e9cd07f7a8a5439136d26eb62d6616f88b3674" upstream="stable-4.4-rk3399-linux"/>
+  <project name="u-boot" revision="e9a3933588973121a4d10b8b3040cbc62b704538" upstream="stable-4.4-rk3399-linux-20190910"/>
 </manifest>
