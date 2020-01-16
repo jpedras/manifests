@@ -4,14 +4,14 @@
   
   <default remote="firefly-linux" revision="master" sync-j="4"/>
   
-  <project name="device-custom" path="device/rockchip" revision="0e898a5ded7b90c50a1a733551cf90c43e1c533f" upstream="master">
+  <project name="device-custom" path="device/rockchip" revision="4d33d7a5805153688deb807c79f004b81daf6d74" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399pro/BoardConfig.mk"/>
   </project>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="rk3399pro/firefly"/>
-  <project name="kernel" revision="c45985f1271e06a9099d1f8444607f4e25d125f8" upstream="stable-4.4-rk3399pro-linux-develop"/>
+  <project name="kernel" revision="33c56e46e5ec4811f4503c7453ac84069cc7b17a" upstream="rk3399pro/firefly"/>
   <project name="rkbin" revision="ae3bed2cd21415a5ab44ca7007b4ca5ba0f2126e" upstream="rk3399pro/firefly"/>
   <project name="tools" revision="c02addac027ff285cd2d1f7b8418f4018ee71047" upstream="rk3399pro/firefly">
     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
@@ -20,5 +20,5 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" revision="14ce716885c49ea79f38a67b4cd9aca303c6b82c" upstream="stable-4.4-rk3399pro-linux-develop"/>
+  <project name="u-boot" revision="9b440ad80090ce3593bc89b873f79bb9c404a6ea" upstream="rk3399pro/firefly"/>
 </manifest>

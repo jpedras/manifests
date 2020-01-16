@@ -17,7 +17,7 @@
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="dff8b97d58507c9fd74082880ae4ab068ba6b88d" upstream="rk3399pro/firefly"/>
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="041edb59255a643315ca5d229dee2724678984b6" upstream="rk3399pro/firefly"/>
   <project name="demo" path="app/demo" revision="7b0adedacfe6c5d4100a24ca2eb4a7972b72fa94" upstream="rk3399pro/firefly"/>
-  <project name="device-custom" path="device/rockchip" revision="0e898a5ded7b90c50a1a733551cf90c43e1c533f" upstream="master">
+  <project name="device-custom" path="device/rockchip" revision="4d33d7a5805153688deb807c79f004b81daf6d74" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
@@ -32,7 +32,7 @@
   <project name="gst-plugins-rockchip" path="external/gst-plugins-rockchip" revision="1e0c3194e6ceec38196ad9d6cbc4c5093bc308f5" upstream="rk3399pro/firefly"/>
   <project name="gstreamer-camera" path="external/gstreamer-camera" revision="7b8a9b33f95a0a7c65fd76d4f4e3f6778fce8ea7" upstream="rk3399pro/firefly"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="c766879e0b750233b197a2dd495e562d64498244" upstream="rk3399pro/firefly"/>
-  <project name="kernel" revision="c45985f1271e06a9099d1f8444607f4e25d125f8" upstream="rk3399pro/firefly"/>
+  <project name="kernel" revision="33c56e46e5ec4811f4503c7453ac84069cc7b17a" upstream="rk3399pro/firefly"/>
   <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk3399pro/firefly"/>
   <project name="libmali" path="external/libmali" revision="915d6a13561e640fd9ff0984209632f027365a0d" upstream="rk3399pro/firefly"/>
   <project name="linux-rga" path="external/linux-rga" revision="d4155b84a6a285c3f25f32143eae66530dccf351" upstream="rk3399pro/firefly"/>
@@ -63,6 +63,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" revision="14ce716885c49ea79f38a67b4cd9aca303c6b82c" upstream="rk3399pro/firefly"/>
+  <project name="u-boot" revision="9b440ad80090ce3593bc89b873f79bb9c404a6ea" upstream="rk3399pro/firefly"/>
   <project name="video" path="app/video" revision="bce3634025425d4464bb1ff906bf04df4d5aa418" upstream="rk3399pro/firefly"/>
 </manifest>
